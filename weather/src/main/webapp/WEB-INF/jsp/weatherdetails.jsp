@@ -90,9 +90,7 @@ body {
 									value="${weatherListData.temp.maxTemp}" /></td>
 						</tr>
 						<tr>
-							<td style="width: 150px;">All Values are in Celcius:-</td>
-							<td style="width: 150px;"><c:out
-									value="${weatherListData.temp.maxTemp}" /></td>
+							<td style="width: 300px;" colspan="2">All Values are in degree Celcius</td>
 						</tr>
 						<tr>
 							<td style="width: 150px;">Sunrise Time:-</td>

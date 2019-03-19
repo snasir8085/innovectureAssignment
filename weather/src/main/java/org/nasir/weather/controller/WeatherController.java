@@ -27,22 +27,15 @@ public class WeatherController {
 		}
 		ModelAndView modelAndView = new ModelAndView("weatherdetails");
 		try {
-			System.out.println("In getWeatherDetails Web service call for Zipcode =" + zipcode);
 
-			System.out.println("In getWeatherDetails Web service call for Zipcode " + zipcode);
 			RestTemplate restTemplate = new RestTemplate();
 
 			String url = "http://api.openweathermap.org/data/2.5/weather?zip=" + zipcode
 					+ ",us&mode=xml&units=metric&appid=d0be846d811bdcb36c46f4f6e299f92d";
-			// String
-			// url="https://samples.openweathermap.org/data/2.5/weather?zip=94203,us&appid=b6907d289e10d714a6e88b30761fae22";
 			ResponseEntity<String> response;
-			System.out.println(url);
-			System.out.println(new URI(url));
 			response = restTemplate.getForEntity(new URI(url), String.class);
 
 			String xmlString = response.getBody();
-			System.out.println("xmlString" + xmlString);
 			XmlMapper xmlMapper = new XmlMapper();
 
 			Current weatherReport = xmlMapper.readValue(xmlString, Current.class);
