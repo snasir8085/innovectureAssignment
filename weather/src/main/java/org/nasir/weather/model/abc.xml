@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<current>
+	<city id="420005608" name="Sacramento">
+		<coord lon="-121.49" lat="38.58"></coord>
+		<country>US</country>
+		<sun rise="2019-03-19T14:11:12" set="2019-03-20T02:16:18"></sun>
+	</city>
+	<temperature value="10.49" min="7.78" max="13.33" unit="metric"></temperature>
+	<humidity value="87" unit="%"></humidity>
+	<pressure value="1012" unit="hPa"></pressure>
+	<wind>
+		<speed value="1.16" name="Calm"></speed>
+		<gusts></gusts>
+		<direction value="208.003" code="SSW" name="South-southwest"></direction>
+	</wind>
+	<clouds value="5" name="clear sky"></clouds>
+	<visibility value="16093"></visibility>
+	<precipitation mode="no"></precipitation>
+	<weather number="800" value="clear sky" icon="02n"></weather>
+	<lastupdate value="2019-03-19T12:59:06"></lastupdate>
+</current>
